@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+  <body class=" bg-body-tertiary" onload="loadCategories()">
+    <!-- header  -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-semibold bg-info text-white" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="#">Portal</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto align-items-center mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold" aria-current="page" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="#"><img src="./assets/Avatar.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </nav>
+         <hr class="container">
+    </header>
+    <!-- main  -->
+    <main class="container">
+        <!-- categories navbar  -->
+        <div class="categories-list">
+            <div id="category-container" class="d-flex justify-content-between">
+
+            </div>
+        </div>
+
+        <!-- show news number and the category name  -->
+        <div class="list-group-item list-group-item-light mt-4 p-3">         
+           <span id="news-count">0</span> items found for category <span id="category-name"></span>            
+        </div>
+
+        <!-- news cards -->
+
+    </main>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
