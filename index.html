@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-  <body class=" bg-body-tertiary" onload="loadCategories()">
+  <body class="bg-body-secondary" onload="loadCategories()">
     <!-- header  -->
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -60,7 +60,34 @@
            <span id="news-count">0</span> items found for category <span id="category-name"></span>            
         </div>
 
+
+        <!-- sorting section start  -->
+        <section class="d-flex justify-content-between mt-4">
+            <div class="d-flex gap-2 justify-content-center align-items-center">
+                <p class="m-0">Sort By </p>
+                <div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Default</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-primary">Todays Pick</button>
+                <button class="btn btn-outline-secondary">Trending</button>
+            </div>
+        </section>
+        <!-- sorting section end -->
+
         <!-- news cards -->
+        <section class="py-4">
+            <div id="cards-container">
+                
+            </div>
+        </section>
 
     </main>
         

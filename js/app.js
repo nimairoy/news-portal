@@ -41,8 +41,28 @@ const fetchCategoryNews = async(categoryId, categoryName ) => {
 const displayNewses = (newses, categoryName) => {
     document.getElementById('news-count').innerText = newses.length;
     document.getElementById('category-name').innerText = categoryName;
-    
-    // newses.forEach(news => {
-    //     console.log(news, categoryName)
-    // })
+
+    const cardsContainer = document.getElementById('cards-container');
+    cardsContainer.innerHTML = '';
+    newses.forEach(news => {
+        console.log(news, categoryName)
+        cardsContainer.innerHTML += `
+        
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="${news.image_url}" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title">${news.title}</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        `
+    })
 }
